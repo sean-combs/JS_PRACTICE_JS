@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practice Exercise 2</title>
+</head>
+<body>
+
+<div class="container">
+	
+<h1>Favorite Fastfood resaurant</h1>
+
+<br>
+
+<input type="text" placeholder="Jollibee, KFC, MCDO, Popeyes" id="ffr">//typing
+
+<br>
+
+<button type="button" onclick="sapphire()">Show me</button> //button
+
+<br>
+
+<h1 id="show_here">Your favorite fastoff restaurant is...</h1> // output of the answer
+
+</div>
+
+
+<script> 
+
+function sapphire() {
+
+var resto = document.getElementById ("ffr").value;
+
+if (resto == 'Jollibee]') {document.getElementById("show_here").innerHTML = "Bida ang saya!";}
+
+else if(resto == 'KFC') {document.getElementById("show_here").innerHTML = "It's Finger lickin' Good";}
+
+else if(resto == 'MCDO') {document.getElementById("show_here").innerHTML = "I'm Lovin' It";}
+
+else if(resto == 'Popeyes') {document.getElementById("show_here").innerHTML = "Love That Chicken";}
+
+else {document.getElementById("show_here").innerHTML = "Invalid output";}
+}
+
+
+
+</script>
+
+</body>
+</html>
